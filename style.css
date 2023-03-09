@@ -16,7 +16,7 @@ nav{
     display: flex;
     align-items:center;
     justify-content: space-between;
-    padding-top: 45px;
+    padding-top: 30px;
     padding-left: 8%;
     padding-right: 8%;
 }
@@ -44,7 +44,7 @@ nav ul li a:hover{
     color: #f9004d;
     transition: .4s;
 }
-.btn{
+/* .btn{
     background-color: #f9004d;
     color: white;
     text-decoration: none;
@@ -56,7 +56,7 @@ nav ul li a:hover{
 }
 .btn:hover{
     transform: scale(1.2);
-}
+} */
 .content{
     position: absolute;
     top: 50%;
@@ -77,32 +77,6 @@ h4{
     color: #fcfc;
     letter-spacing: 2px;
     font-size: 20px;
-}
-.newsletter form{
-    width: 380px;
-    max-width: 100%;
-    position: relative;
-}
-.newsletter form input:first-child{
-    display: inline-block;
-    width:100%;
-    padding: 14px 130px 14px 15px;
-    border: 2px solid #f9004d;
-    outline: none;
-    border-radius: 30px;
-}
-.newsletter form input:last-child{
-    position: absolute;
-    display: inline-block;
-    outline: none;
-    border: none;
-    padding: 10px 30px;
-    border-radius: 30px;
-    background-color: #f9004d;
-    color: white;
-    box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
-    top: 6px;
-    right: 6px; 
 }
 
 .about{
@@ -147,6 +121,167 @@ h4{
     line-height: 28px;
     font-size: 18px;
     margin-bottom: 45px;
-
-
 }
+button{
+    background-color:#f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;   
+}
+button a {
+    text-decoration: none;
+    color: inherit;
+  }
+button:hover{
+    background-color: transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+}
+.contact-me{
+    width: 100%;
+    height: 290px;
+    background: #191919;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.contact-me h5{
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.contact-me p{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.contact-me .button-two{
+    background-color:#f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;   
+}
+.contact-me .button-two:hover{
+    background-color:transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+}
+footer{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background: #101010;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer p:nth-child(1){
+    font-size: 30px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+footer p:nth-child(2){
+    font-size: 17px;
+    color: white;
+    width: 500px;
+    text-align: center;
+    line-height: 26px;
+}
+.social{
+    display:flex;
+}
+.social a{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f9004d;
+    border-radius: 50%;
+    margin: 22px 10px;
+    color:white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.social a:hover{
+    transform: scale(1.3);
+    transition: .3s;
+}
+.end{
+    position: absolute;
+    color: #f9004d;
+    bottom:35px;
+    font-size: 14px;
+}
+html {
+    scroll-behavior: smooth;
+}
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #101010; /* set your desired background color */
+    z-index: 9999; /* set a high z-index value to make sure the navigation bar is on top of other elements */
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    height: 60px; /* set your desired height */
+    padding: 0 20px; /* set your desired padding */
+  }
+  
+  nav ul li {
+    margin: 0;
+  }
+  
+  nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: #333; /* set your desired text color */
+    font-weight: bold;
+  }
+
+ .skill{
+    width: 100%;
+    padding: 100px 0px;
+    background-color: #191919; 
+}
+
+.skill-text{
+    width: 550px;
+} 
+.contact-me{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.skill-text p{
+    color: #fcfc;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 10px;
+    margin-bottom: 45px;
+} 
